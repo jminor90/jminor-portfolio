@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    padding: 2px;
+    margin: 3px;
+}
+
+
+body {
+    background-color: #d6c4ff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;    
+    background-color: aqua;
+    color: rgb(247, 0, 0);
+    border-radius: 15px 15px 0px 0px;
+}
+
+h1 {
+    padding: 10px;
+    color:whitesmoke;
+    background-color: red;
+    border-radius: 50%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav button {    
+    justify-content: center;
+    width: 200px;
+    margin: 0 .5%;
+    font-size: 150%;
+    color: #13293d;
+    background-color: #fff;
+    border: 2px solid #13293d;
+    border-radius: 10px 10px 10px 10px;
+}
+
+nav button:hover {
+    background-color: #772014;
+    color: #fff;
+}
+nav button:active {
+    font-size: 150%;
+    box-shadow: 0 0 10px #000 inset;
+}
+nav button:focus {
+    outline: none;
+    border-color: #8ac4ff;
+}
+
+
+
+h2 {
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(85, 255, 0);
+}
+
+.profile-image {
+    height: 200px;
+    padding: 0px;
+    border: 2px solid #f7f5f0;
+    border-radius: 100%;
+    background-color: #f7f5f0;
+}
+
+.about-me{
+    display:flex;
+    flex: space-evenly;
+    background-color: #4c00ff;
+}
+.about-me p{
+    color: white;
+    font-size: 16px;
+}
+h3 {
+    background-color: blue;
+    color:aquamarine;
+}
+.my-projects{
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #4c00ff;
+
+}
+.my-projects figure{    
+    padding: 15px;
+    border-style: solid;
+    border-width: 2px;    
+    color: white;
+    
+
+}
+h4 {
+    display: flex;
+    justify-content: center;
+}
+.contact-me {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+}
