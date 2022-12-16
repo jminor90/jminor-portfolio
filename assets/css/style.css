@@ -10,6 +10,7 @@ body {
 }
 
 header {
+    margin:0;
     display: flex;
     justify-content: space-between;    
     background-color: aqua;
@@ -24,8 +25,11 @@ h1 {
     border-radius: 50%;
 }
 nav {
+    margin: 0;
     display: flex;
     justify-content: space-between;
+    background-color: aqua;
+    border-radius: 0px 0px 15px 15px;
 }
 
 nav button {    
@@ -71,7 +75,7 @@ h2 {
 
 .about-me{
     display:flex;
-    flex: space-evenly;
+    justify-content: space-between;
     background-color: #4c00ff;
 }
 .about-me p{
@@ -97,6 +101,66 @@ h3 {
     
 
 }
+section .project-1{
+    background-image: url(https://www.wikihow.com/images/thumb/8/85/Draw-a-Cartoon-Frog-Step-10.jpg/aid266789-v4-1200px-Draw-a-Cartoon-Frog-Step-10.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    
+}
+
+span[data-descr] {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    
+}
+span[data-descr]:hover::after,
+span[data-descr]:focus::after {
+content: attr(data-descr);
+position: absolute;
+bottom: 24px;
+min-width: 200px;
+border: 1px #aaaaaa solid;
+background-color: #13293d;
+padding: 3px;
+color: #fff;
+font-size: 14px;
+z-index: 1;
+}
+
+
+section .project-1:hover {
+    height: 200px;
+    color:#000;
+}
+
+section .project-2{
+    background-image: url(https://img.freepik.com/premium-vector/hand-drawn-cartoon-doodle-skull-funny-cartoon-skull-isolated-white-background_217204-944.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+section .project-2:hover {
+    height: 200px;
+    color:#000;
+}
+
+section .project-3{
+    background-image: url(https://lumiere-a.akamaihd.net/v1/images/pooh_baeb7dc6.jpeg?region=410,0,1229,1229);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+section .project-3:hover {
+    height: 200px;
+    color:#000;
+}
+
+
 h4 {
     display: flex;
     justify-content: center;
