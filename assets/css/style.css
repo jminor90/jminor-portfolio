@@ -154,6 +154,11 @@ font-size: 14px;
 z-index: 1;
 }
 
+/*:target {
+    height: 200px;
+    color:#000;
+}
+*/
 
 section .project-1:hover {
     height: 200px;
