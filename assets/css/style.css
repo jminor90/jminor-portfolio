@@ -48,6 +48,20 @@ h1 {
     padding-right: 0%;
 }
 
+
+h1 p {
+    border-radius: 10px 10px 0px 0px;
+    border-top: solid 3px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    background-color: var(--background-color);
+    padding-left: 15px;
+    padding-right: 20px;
+    --text-color: var(--contrast-color);
+    border-color: var(--layer2-color);
+}
+
+
 .span {
     font-family: 'Marck Script', cursive;
     display: flex;
@@ -73,13 +87,14 @@ h1 {
 
 nav {
     margin: 0%;
-    padding: 0.5%;
-    padding-right: 1%;
+    /* padding: 0.5%; */
+    padding-right: 2%;
     padding-left: .5%;
+    padding-top: .5%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: var(--layer1-color);
-    border-radius: 0px 22px 22px 0px;
+    border-radius: 3px 22px 22px 0px;
     position: fixed;
     top: 56px;
     width: 50%;
@@ -106,15 +121,19 @@ nav li {
     width: 120%;
     font-size: 125%;
     color: var(--text-color);
-    background-color: var(--layer1-color);
-    border-bottom: solid 2px;
-    border-right: solid 3px;
-    border-top: solid 1px;
+    background-color: var(--background-color);
+    /* border-bottom: solid 2px; */
+    border-right: solid 1px;
+    border-top: solid 3px;
     border-left: solid 1px;
-    border-radius: 10px 10px 10px 0px;
+    border-radius: 10px 10px 0px 0px;
     padding-left: 0%;
     text-align: center;
+    border-color: var(--layer2-color);
+    padding-bottom: 3%;
 }
+
+
 
 nav li:hover {
     background-color: var(--layer1-color);
@@ -138,7 +157,9 @@ nav li:focus {
 
 h2 {
     font-family: 'Roboto Mono', monospace;
-    padding: 0.5%;
+    /* padding: 0.5%; */
+    padding-bottom: .5%;
+    padding-right: 1%;
     display: flex;
     justify-content: flex-end;
     background-color: var(--layer1-color);
@@ -148,6 +169,20 @@ h2 {
     border-left: solid 3px;
     border-top: solid 1px;
 }
+
+h2 p {
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: solid 3px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    background-color: var(--background-color);
+    padding-left: 1%;
+    padding-right: 1%;
+    color: var(--contrast-color);
+    border-color: var(--text-color);
+}
+
+
 
 .profile-image {
     height: 200px;
@@ -172,15 +207,29 @@ h2 {
 
 h3 {
     font-family: 'Roboto Mono', monospace;
-    padding: 0.5%;
+    /* padding: 0.5%; */
+    padding-bottom: .5%;
+    padding-right: 1%;
     display: flex;
     justify-content: flex-end;
     background-color: var(--layer1-color);
     border-radius: 10px 0px 0px 10px;
-    font-size: 200%;
+    font-size: 225%;
     border-bottom: solid 3px;
     border-left: solid 3px;
     border-top: solid 1px;
+}
+
+h3 p {
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: solid 3px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    background-color: var(--background-color);
+    padding-left: 1%;
+    padding-right: 1%;
+    color: var(--contrast-color);
+    border-color: var(--text-color);
 }
 
 .my-projects{
@@ -191,13 +240,19 @@ h3 {
 
 }
 .my-projects figure {
-    padding: 15px;
+    font-family: 'Space Mono', monospace;
+    /* padding: 15px; */
     border-style: solid;
     border-width: 2px;
-    color: white;
+    color: var(--contrast-color);
     padding: 4%;
     margin: 1%;
     margin-top: 2%;
+    font-size: 225%;
+    display: flex;
+    flex-flow: row-reverse;
+    border-color: var(--layer2-color);
+    border-radius: 10px;
 }
 section .project-1 {
     background-image: url(https://www.wikihow.com/images/thumb/8/85/Draw-a-Cartoon-Frog-Step-10.jpg/aid266789-v4-1200px-Draw-a-Cartoon-Frog-Step-10.jpg);
@@ -219,17 +274,27 @@ span[data-descr] {
 }
 span[data-descr]:hover::after,
 span[data-descr]:focus::after {
-content: attr(data-descr);
-position: absolute;
-bottom: 24px;
-min-width: 400px;
-border: 1px #aaaaaa solid;
-background-color: #13293d;
-padding: 3px;
-color: #fff;
-font-size: 14px;
-z-index: 1;
+    content: attr(data-descr);
+    position: relative;
+    display: inline-flex;
+    /* flex-direction: row-reverse; */
+    /* flex-flow: row-reverse; */
+    bottom: 100px;
+    left: 75%;
+    min-width: 200px;
+    border: 1px #aaaaaa solid;
+    background-color: #13293d;
+    padding: 1%;
+    color: #fff;
+    font-size: 14px;
+    z-index: 1;
 }
+
+.my-projects *:hover {
+    height: 500px;
+}
+
+
 
 /*:target {
     height: 200px;
@@ -273,10 +338,23 @@ h4 {
     display: flex;
     justify-content: center;
     background-color: var(--layer1-color);
+    /* border-bottom: solid 3px; */
+    /* border-left: solid 1px; */
+    /* border-right: solid 1px; */
+    border-radius: 0px 0px 10px 10px;
+    margin-top: 0px;
+}
+
+h4 p {
+    border-radius: 0px 0px 10px 10px;
     border-bottom: solid 3px;
     border-left: solid 1px;
     border-right: solid 1px;
-    border-radius: 0px 0px 10px 10px;
+    background-color: var(--background-color);
+    padding-left: 15px;
+    padding-right: 20px;
+    --text-color: var(--contrast-color);
+    border-color: var(--layer2-color);
 }
 
 
@@ -286,7 +364,7 @@ footer {
     /* position: fixed; */
     /* bottom: 0; */
     /* border-color: var(--contrast-color); */
-    padding: 0.5%;
+    padding: 0;
     background-color: var(--layer1-color);
     border-radius: 10px 10px 10px 10px;
     border-bottom: solid 3px;
@@ -308,10 +386,18 @@ footer {
     font-size: 160%;
 }
 
+
+
 .contact-me ul li {
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     background-color: var(--layer1-color);
     border: solid 3px var(--layer2-color);
     border-radius: 10px;
+}
+
+.contact-me ul li * {
+    background-color: var(--layer1-color);
 }
