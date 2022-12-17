@@ -10,7 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
-        </style> 
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'); 
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap'); 
+    </style>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Minor Solutions</title>
@@ -20,16 +32,16 @@
         <h1>
             Joshua Minor
         </h1>
-        <p>
-            "Major problems sometimes require, Minor Solutions."
-        </p>
+
     </header>
     <nav>
-        <a href="#about-me"><button>About Me</button></a>
-        <a href="#my-projects"><button>My Projects</button></a>
-        <a href="#contact-me"><button>Contact Me</button></a>
+        <a href="#about-me"><li>About Me</li></a>
+        <a href="#my-projects"><li>My Projects</li></a>
+        <a href="#contact-me"><li>Contact Me</li></a>
     </nav>
-    
+    <span class = "span">
+        Sometimes major problems, require Minor Solutions
+    </span>
     <main class="main-content">
         <h2>About Me</h2>
         <section id="about-me" class="about-me">         
@@ -41,29 +53,22 @@
         <h3>My Projects</h3>
         <section class="my-projects">            
             <span id="my-projects" tabindex="0" data-descr="THIS IS A FROG"><figure class="project-1">Project 1</figure></span>
-            <span tabindex="0" data-descr="THIS IS A SKULL"><figure class="project-2">Project 2</figure></span>
-            <span tabindex="0" data-descr="THIS IS WINNIE THE POOH"><figure class="project-3">Project 3</figure></span>
+            <aside>
+                <span tabindex="0" data-descr="THIS IS A SKULL"><figure class="project-2">Project 2</figure></span>
+                <span tabindex="0" data-descr="THIS IS WINNIE THE POOH"><figure class="project-3">Project 3</figure></span>
+            </aside>
+
         </section>
-        <h4>Contact Me</h4>
-        <section id="contact-me" class="contact-me">            
-            <p>
-                Email
-            </p>
-            <p>
-                GitHub
-            </p>
-            <p>
-                LinkedIn
-            </p>
-        </section>
+
     </main>
 </body>
-<footer>
-    Made with love by Joshua Minor
-    <p>
-        <a href="#Github"></a>
-        <a href="#Contact"></a>
-        <a href="#LinkedIn"></a>
-    </p>
+<footer>    
+    <section id="contact-me" class="contact-me">
+    <h4>Contact Me</h4>
+        <ul>
+            <li>Email</li>
+            <li>GitHub</li>
+            <li>LinkedIn</li>
+        </ul>
 </footer>
 </html>
