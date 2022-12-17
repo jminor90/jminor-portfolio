@@ -32,6 +32,7 @@ header {
     padding-left: .5%;
     border-radius: 0px 20px 0px 0px;
     border-right: solid;
+    z-index: 10;
 }
 
 
@@ -54,10 +55,13 @@ h1 {
     justify-content: flex-end;
     padding: 1.5%;
     background-image: url(../images/stars-krissatiel.png);
-    border-bottom: 2px solid;
-    border-right: 1px solid;
+    border-bottom: solid 3px;
+    border-right: solid 2px;
+    border-left: solid 2px;
     border-radius: 0px 0px 10px 0px;
-    font-size: 175%;
+    font-size: 180%;
+    color: var(--contrast-color);
+    border-color: var(--layer2-color);
 }
 
 /*.span p {
@@ -69,9 +73,11 @@ h1 {
 
 nav {
     margin: 0%;
-    padding: 0.48%;
+    padding: 0.5%;
+    padding-right: 1%;
+    padding-left: .5%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: var(--layer1-color);
     border-radius: 0px 22px 22px 0px;
     position: fixed;
@@ -81,22 +87,33 @@ nav {
     list-style-type: none;
     text-decoration: none;
     font-size: 130%;
-    border-bottom: solid;
-    border-right: solid;
+    border-bottom: solid 3px;
+    border-right: solid 4px;
+    border-top: solid 2px;
 }
+
+nav * {
+    background-color: var(--layer1-color);
+    padding-right: 5%;
+}
+
+
 
 
 
 nav li {
     font-family: 'Roboto Mono', monospace;
-    justify-content: center;
     width: 120%;
     font-size: 125%;
     color: var(--text-color);
     background-color: var(--layer1-color);
-    border-bottom: 2px solid;
-    border-right: 2px solid;
-    border-radius: 0px 10px 10px 0px;
+    border-bottom: solid 2px;
+    border-right: solid 3px;
+    border-top: solid 1px;
+    border-left: solid 1px;
+    border-radius: 10px 10px 10px 0px;
+    padding-left: 0%;
+    text-align: center;
 }
 
 nav li:hover {
@@ -124,17 +141,20 @@ h2 {
     padding: 0.5%;
     display: flex;
     justify-content: flex-end;
-    background-color: var(--layer2-color);
+    background-color: var(--layer1-color);
     border-radius: 10px 0px 0px 10px;
-    font-size: 130%;
+    font-size: 225%;
+    border-bottom: solid 3px;
+    border-left: solid 3px;
+    border-top: solid 1px;
 }
 
 .profile-image {
     height: 200px;
-    padding: 0px;
-    border: 2px solid #f7f5f0;
+    border: 3px solid var(--text-color);
     border-radius: 100%;
-    background-color: #f7f5f0;
+    background-color: var(--layer2-color);
+    margin: 1.5%;
 }
 
 .about-me{
@@ -142,18 +162,25 @@ h2 {
     justify-content: space-between;
     
 }
-.about-me p{
+.about-me p {
     color: white;
     font-size: 16px;
+    padding-left: 8%;
+    padding-top: 1%;
 }
+
+
 h3 {
     font-family: 'Roboto Mono', monospace;
     padding: 0.5%;
     display: flex;
     justify-content: flex-end;
-    background-color: var(--layer2-color);
+    background-color: var(--layer1-color);
     border-radius: 10px 0px 0px 10px;
-    font-size: 130%;
+    font-size: 200%;
+    border-bottom: solid 3px;
+    border-left: solid 3px;
+    border-top: solid 1px;
 }
 
 .my-projects{
@@ -163,20 +190,21 @@ h3 {
     
 
 }
-.my-projects figure{    
+.my-projects figure {
     padding: 15px;
     border-style: solid;
-    border-width: 2px;    
+    border-width: 2px;
     color: white;
-    
-
+    padding: 4%;
+    margin: 1%;
+    margin-top: 2%;
 }
-section .project-1{
+section .project-1 {
     background-image: url(https://www.wikihow.com/images/thumb/8/85/Draw-a-Cartoon-Frog-Step-10.jpg/aid266789-v4-1200px-Draw-a-Cartoon-Frog-Step-10.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size:cover;
-    
+    background-size: cover;
+    height: 300px;
 }
 
 
@@ -194,7 +222,7 @@ span[data-descr]:focus::after {
 content: attr(data-descr);
 position: absolute;
 bottom: 24px;
-min-width: 200px;
+min-width: 400px;
 border: 1px #aaaaaa solid;
 background-color: #13293d;
 padding: 3px;
@@ -209,10 +237,10 @@ z-index: 1;
 }
 */
 
-section .project-1:hover {
+/*section .project-1:hover {
     height: 200px;
     color:#000;
-}
+}*/
 
 section .project-2{
     background-image: url(https://img.freepik.com/premium-vector/hand-drawn-cartoon-doodle-skull-funny-cartoon-skull-isolated-white-background_217204-944.jpg?w=2000);
@@ -220,31 +248,35 @@ section .project-2{
     background-position: center;
     background-size:cover;
 }
-
+/*
 section .project-2:hover {
     height: 200px;
     color:#000;
 }
-
+*/
 section .project-3{
     background-image: url(https://lumiere-a.akamaihd.net/v1/images/pooh_baeb7dc6.jpeg?region=410,0,1229,1229);
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
 }
-
+/*
 section .project-3:hover {
     height: 200px;
     color:#000;
 }
-
+*/
 
 h4 {
     font-family: 'Roboto Mono', monospace;
-    font-size: 120%;
+    font-size: 200%;
     display: flex;
     justify-content: center;
-    background-color: var(--layer2-color);
+    background-color: var(--layer1-color);
+    border-bottom: solid 3px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 
@@ -253,22 +285,33 @@ footer {
     justify-content: center;
     /* position: fixed; */
     /* bottom: 0; */
-    /* border-color: var(--layer2-color); */
+    /* border-color: var(--contrast-color); */
     padding: 0.5%;
-    background-color: var(--layer2-color);
+    background-color: var(--layer1-color);
     border-radius: 10px 10px 10px 10px;
+    border-bottom: solid 3px;
+    border-left: solid 2px;
+    border-right: solid 2px;
+    border-top: solid 1px;
+}
+
+.contact-me{
+    background-color: var(--layer1-color);
 }
 
 .contact-me ul {
-    display:inline-flex;
-    justify-content: space-evenly;
-    padding: 10%;
-    background-color: var(--layer2-color);
-    
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 4%;
+    background-color: var(--layer1-color);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 160%;
 }
 
-.contact-me ul li {    
+.contact-me ul li {
     padding-left: 5%;
     padding-right: 5%;
-    background-color: var(--layer2-color);    
+    background-color: var(--layer1-color);
+    border: solid 3px var(--layer2-color);
+    border-radius: 10px;
 }
