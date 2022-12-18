@@ -32,6 +32,7 @@ header {
     padding-left: .5%;
     border-radius: 0px 20px 0px 0px;
     border-right: solid;
+    border-top: solid 1px;
     z-index: 10;
 }
 
@@ -151,9 +152,8 @@ nav li:focus {
 
 .main-content {
     padding: 1% 0% 1% 2%;
-    margin: 0% 0% 10% 0%;
+    margin: .5% 0% 10% 0%;
 }
-
 
 h2 {
     font-family: 'Roboto Mono', monospace;
@@ -185,11 +185,12 @@ h2 p {
 
 
 .profile-image {
-    height: 200px;
+    height: 250px;
     border: 3px solid var(--text-color);
     border-radius: 100%;
     background-color: var(--layer2-color);
-    margin: 1.5%;
+    margin: 1%;
+    margin-left: 4%;
 }
 
 .about-me{
@@ -200,8 +201,12 @@ h2 p {
 .about-me p {
     color: white;
     font-size: 16px;
-    padding-left: 8%;
-    padding-top: 1%;
+    margin-left: 10%;
+    margin-top: 1%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    padding: 1%;
+    border: solid;
 }
 
 
@@ -396,8 +401,140 @@ footer {
     background-color: var(--layer1-color);
     border: solid 3px var(--layer2-color);
     border-radius: 10px;
+    margin-right: 5%;
 }
 
+.contact-me ul li a:hover {
+    color: var(--contrast-color);
+    /*background-color: var(--layer2-color)*/
+}
+
+/*
+.contact-me ul li:hover{
+    background-color: var(--layer2-color);
+}
+*/
 .contact-me ul li * {
     background-color: var(--layer1-color);
+}
+
+/*Media screen and smaller views settings*/
+
+@media screen and (max-width:1000px){
+    .span {
+        height: 200px;
+        width: 100%;
+    }
+    .about-me p {
+        padding-left: 1%;
+        margin-left: 18%;
+    }
+
+
+    
+}
+
+
+
+
+@media screen and (max-width: 800px){
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        border: solid 2px;
+    }
+    
+    .main-content {
+        /* background-color: var(--contrast-color); */
+        padding: 1% 0% 2% 2%;
+        margin: 1% 0% 2% 1%;
+    }
+
+
+
+    body, header {
+        /* background-color: var(--contrast-color); */
+        width: 100%;
+        border-radius: 0px 0px 30px 0px;
+        border-bottom: solid 3px;
+    }
+    
+    
+    body, header h1 * {
+        /* background-color: var(--contrast-color); */
+    }
+    .span {
+        height: 280px;
+        width: 100%;
+    }
+    
+    
+
+    body, nav {
+        flex-direction: column;
+        top: 68px;
+    }
+
+    body, nav * {
+        /* background-color: var(--contrast-color); */
+    }
+
+
+
+
+    body, nav, li {
+        /* background-color: var(--contrast-color); */
+    }
+    
+    body, nav, li * {
+        /* background-color: var(--layer1-color); */
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-right: 0%;
+    }
+    
+    nav {
+        padding-left: 0%;
+        padding-right: 2%;
+    }
+
+    nav a li {
+        /* background-color: var(--contrast-color); */
+        width: 100%;
+        border-radius: 0px 10px 10px 0px;
+        border-left: 0;
+        border-bottom: solid 2px;
+        border-top: solid 2px;
+        border-right: solid 1px;
+        border-color: var(--layer2-color);
+    }
+    .about-me p {
+        margin-left: 14%;
+    }
+    .profile-image {
+        height: 175px;
+        border: 3px solid var(--text-color);
+        border-radius: 100%;
+        background-color: var(--layer2-color);
+        margin: 1.5%;
+        margin-left: 10%;
+    }
+
+    h2 {
+        /* background-color: var(--contrast-color); */
+        padding-bottom: 1%;
+    }
+
+    h3 {
+        /* background-color: var(--contrast-color); */
+        padding-bottom: 1%;
+    }
+
+    .contact-me ul li * {
+        font-size: 70%;
+        /* background-color: var(--contrast-color); */
+    }
+
+
 }
