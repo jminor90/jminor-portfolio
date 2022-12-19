@@ -61,7 +61,7 @@ h1 p {
     border-color: var(--layer2-color);
 }
 
-
+/*Top Background*/
 .span {
     font-family: 'Marck Script', cursive;
     display: flex;
@@ -80,7 +80,7 @@ h1 p {
 
 
 
-
+/*Navigation*/
 nav {
     margin: 0%;
     padding-right: 2%;
@@ -144,6 +144,8 @@ nav li:focus {
     border-color: var(--contrast-color);
 }
 
+
+
 .main-content {
     padding: 1% 0% 1% 2%;
     margin: .5% 0% 10% 0%;
@@ -176,7 +178,7 @@ h2 p {
 }
 
 
-
+/*Profile Image*/
 .profile-image {
     height: 250px;
     border: 3px solid var(--text-color);
@@ -187,6 +189,7 @@ h2 p {
     margin-right: 12%;
 }
 
+/*About-Me*/
 .about-me{
     display:flex;
     justify-content: space-between;
@@ -238,6 +241,8 @@ h3 p {
     border-color: var(--text-color);
 }
 
+
+/*Projects*/
 .my-projects{
     padding: 10px;
     justify-content: space-between;
@@ -357,6 +362,9 @@ footer {
     border-right: solid 2px;
     border-top: solid 1px;
 }
+
+
+/*Contact Me*/
 
 .contact-me{
     background-color: var(--layer1-color);
