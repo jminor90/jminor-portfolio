@@ -144,7 +144,7 @@ nav li:focus {
     border-color: var(--contrast-color);
 }
 
-
+/*Main Content*/
 
 .main-content {
     padding: 1% 0% 1% 2%;
@@ -265,16 +265,7 @@ h3 p {
     border-color: var(--layer2-color);
     border-radius: 10px;
 }
-
-section .project-1 {
-    background-image: url(https://picsum.photos/800/600);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 300px;
-}
-
-
+/*Data Description and Hover effects for project images*/
 span[data-descr] {
     position: relative;
     text-decoration: none;
@@ -303,27 +294,33 @@ span[data-descr]:focus::after {
 }
 
 
+.project-1 {
+    background-image: url(https://picsum.photos/800/600);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+.project-2{
+    background-image: url(https://picsum.photos/800/600);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+.project-3{
+    background-image: url(https://picsum.photos/800/600);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
 /* Holding this code to reference later*/
 /*:target {
     height: 200px;
     color:#000;
 }
 */
-
-section .project-2{
-    background-image: url(https://picsum.photos/800/600);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-}
-
-section .project-3{
-    background-image: url(https://picsum.photos/800/600);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-}
-
 
 h4 {
     font-family: 'Roboto Mono', monospace;
@@ -349,7 +346,7 @@ h4 p {
 }
 
 
-
+/*Footer info*/
 
 footer {
     display: flex;
@@ -431,6 +428,12 @@ footer {
     .profile-image {
         margin: 1%;
         margin-left: 5%;
+    }
+
+    span[data-descr]:hover::after,span[data-descr]:focus::after {
+    content: attr(data-descr);
+    bottom: 100px;
+    left: 25%;
     }
 }
 
@@ -581,7 +584,13 @@ footer {
         width: 100%;
     }
 
-    h1 p {
-        
+    span[data-descr]:hover::after,span[data-descr]:focus::after {
+        content: attr(data-descr);
+        bottom: 100px;
+        left: 2%;
+    }
+
+    .contact-me ul {
+    display: grid;
     }
 }
