@@ -251,6 +251,7 @@ h3 p {
 
 
 
+
 .my-projects figure {
     font-family: 'Space Mono', monospace;
     border-style: solid;
@@ -265,6 +266,12 @@ h3 p {
     border-color: var(--layer2-color);
     border-radius: 10px;
 }
+
+.my-projects span a {
+    text-decoration: none;
+}
+
+
 /*Data Description and Hover effects for project images*/
 span[data-descr] {
     position: relative;
@@ -275,6 +282,7 @@ span[data-descr] {
 }
 span[data-descr]:hover::after,
 span[data-descr]:focus::after {
+
     content: attr(data-descr);
     position: relative;
     bottom: 100px;
@@ -287,10 +295,13 @@ span[data-descr]:focus::after {
     border-radius: 10px;
     font-size: 115%;
     z-index: 1;
+    
 }
 
 .my-projects *:hover {
+
     height: 500px;
+    transition: 1s;
 }
 
 
@@ -302,11 +313,14 @@ span[data-descr]:focus::after {
     height: 300px;
 }
 
+
+
 .project-2{
     background-image: url(https://picsum.photos/800/600);
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
+    height:150px;
 }
 
 .project-3{
@@ -314,6 +328,7 @@ span[data-descr]:focus::after {
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
+    height:150px;
 }
 /* Holding this code to reference later*/
 /*:target {
@@ -546,9 +561,11 @@ footer {
         font-size: 125%;
     }
 
+    /*
     .contact-me ul li {
-        /*background-color: #d98310;*/
+        background-color: #d98310;
     }
+    */
 
     .contact-me ul a {
         padding-left: 1%;
