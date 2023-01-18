@@ -256,7 +256,7 @@ h3 p {
     font-family: 'Space Mono', monospace;
     border-style: solid;
     border-width: 4px;
-    color: var(--contrast-color);
+    color: var(--text-color);
     padding: 4%;
     margin: 1%;
     margin-top: 2%;
@@ -265,10 +265,7 @@ h3 p {
     flex-flow: row-reverse;
     border-color: var(--layer2-color);
     border-radius: 10px;
-}
-
-.my-projects span a {
-    text-decoration: none;
+    text-shadow: 2px 2px 1px var(--background-color);
 }
 
 
@@ -299,9 +296,9 @@ span[data-descr]:focus::after {
 }
 
 .my-projects *:hover {
-
     height: 500px;
     transition: 1s;
+    color: var(--contrast-color);
 }
 
 
