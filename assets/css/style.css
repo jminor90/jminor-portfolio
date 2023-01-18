@@ -295,7 +295,7 @@ span[data-descr]:focus::after {
 
 
 .project-1 {
-    background-image: url(https://picsum.photos/800/600);
+    background-image: url("../images/project-1.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
