@@ -13,7 +13,7 @@ Best viewed in Google Chrome at this time.
 
 ![Image of website](assets/images/screenshot.png)
 
-- [Link to Website Index](https://jminor90.github.io/resume-website/)
+- [Link to Website Index](https://jminor90.github.io/jminor-portfolio/)
 
 
 ## Credits
